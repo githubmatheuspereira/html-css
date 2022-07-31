@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: #ffe4c4;
+            text-align: center;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+        }
+        div>p{
+            
+            visibility: hiddn;
+        }
+
+        div:hover>p{
+            display: block;
+            color: black;
+            visibility:visible;
+
+        }
+
+        div:hover{
+            background-image: radial-gradient(circle, #fff5e7, #ffe4c4, #00000015 130%);
+            transition: 0ms ease-in 50ms;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+        <p>Esta é a DIV 01</p>
+    </div>
+    <div id="d2">
+        <p>Esta é a DIV 02</p>
+    </div>
+    <div id="d3">
+        <p>Esta é a DIV 03</p>
+    </div>
+</body>
+</html>
